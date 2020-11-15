@@ -1,0 +1,43 @@
+
+<html>
+<body>     
+    
+<form id="frm1" action="?" action="post" >
+
+ <input type="checkbox" id="checkBox" onclick="enableDisable(this.checked, 'lname', 'fname')">
+ <input type="checkbox" id="checkBox1" onclick="enableDisable1(this.checked, 'lname1', 'fname1')">
+ <br>
+  First name: <input type="text" name="fname" id="fname" disabled><br>
+  Last name: <input type="text" name="lname" id="lname" disabled><br><br>
+  
+   2 name: <input type="text" name="fname" id="fname1" disabled><br>
+   2 name: <input type="text" name="lname" id="lname1" disabled><br><br>
+  
+  <input type="submit" value="Submit" onclick="myFunction()" >
+</form>
+ 
+
+<script>
+function myFunction() {
+	
+	var res = document.getElementById("fname").value + " Hello !!"
+	alert(res)
+}
+
+function enableDisable(bEnable, textBoxID,textBoxID1)
+    {
+         document.getElementById(textBoxID).disabled = !bEnable
+		 document.getElementById(textBoxID1).disabled = !bEnable
+    }
+	
+	
+function enableDisable1(bEnable, textBoxID,textBoxID1)
+    {
+         document.getElementById(textBoxID).disabled = !bEnable
+		 document.getElementById(textBoxID1).disabled = !bEnable
+    }
+	
+</script>
+
+</body>
+</html>
