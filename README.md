@@ -1,2 +1,2 @@
 # javascript
-html form with javascript.
+html form with javascript validation.
